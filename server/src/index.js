@@ -13,6 +13,12 @@ app.get("/", (req, res) => {
     res.send("Hello World")
 });
 
+app.get("/register", (req, res) => {
+    res.send({
+        message: "You Have reached the sigunp route"
+    })
+});
+
 app.listen(8081, (req, res) => {
     console.log("Server has started at port 8081.!!!")
 });
